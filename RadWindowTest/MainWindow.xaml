@@ -1,0 +1,30 @@
+﻿<telerik:RadWindow x:Class="RadWindowTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RadWindowTest"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        xmlns:navigation="clr-namespace:Telerik.Windows.Controls.Navigation;assembly=Telerik.Windows.Controls.Navigation"
+        navigation:RadWindowInteropHelper.AllowTransparency="False"
+        mc:Ignorable="d"
+        Height="450" Width="800">
+
+    <telerik:RadWindow.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/System.Windows.xaml" />
+                <ResourceDictionary Source="/Telerik.Windows.Themes.Fluent;component/Themes/Telerik.Windows.Controls.Navigation.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </telerik:RadWindow.Resources>
+
+    <telerik:RadWindow.Style>
+        <StaticResource ResourceKey="RadWindowStyle" />
+    </telerik:RadWindow.Style>
+
+    <Grid>
+        <TextBlock x:Name="TextBlock"
+                   TextWrapping="Wrap" />
+    </Grid>
+</telerik:RadWindow>
